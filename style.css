@@ -1,3 +1,11 @@
+/* TO DO
+- wyrownac sekcje z boxami, zeby opis byl jedyna rzecza po lewej, a boxy z labelami byly juz po prawej, jak na wzorze
+ostylować:
+- textarea
+- dropbox
+*/
+
+
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
 
 * {
@@ -10,13 +18,22 @@ body {
   background-color: #216869;
   padding: 2rem;
   font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   color: #1f2421;
 }
 
 header, main, footer {
   margin: 2rem auto 4rem auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ff7519;
+}
+
+a:hover {
+  color: #f7fcf9;
 }
 
 h1 {
@@ -48,37 +65,42 @@ form {
 }
 
 form > div {
-  margin: 0 auto 1.8rem auto;
+  margin: 0 auto 2.5rem auto;
   padding: 0;
-  background-color: pink;
   position: relative;
   overflow: hidden;
 }
 
-form > div > div {
-  margin: 0 auto 0 auto;
+div > p {
+  width: 50%;
+  text-align: right;
+}
+
+.boxes {
+  margin: 0 auto;
   padding: 0;
-  background-color: cyan;
+  align: right;
   position: relative;
   overflow: hidden;
+  clear:both;
 }
 
 .enters label {
   width: 50%;
   margin: 0 0.5rem 0 auto;
   float: left;
-  background-color: yellow;
   text-align: right;
   position: relative;
-
+  clear: both;
 }
 
 .boxes label {
   width: 50%;
-  margin: 0 auto 0 0.5rem;
+  padding-left: 1rem;
   float: right;
   text-align: left;
-  background-color: red;
+  font-size: 1.2rem;
+  clear: both;
 }
 
 label p {
@@ -87,45 +109,96 @@ label p {
   line-height: 1.2rem;
 }
 
-
-input {
-  height: 2rem;
-}
-
 input, textarea {
   background-color: #f7fcf9;
-  border: 0;
+  border: 3px solid #f7fcf9;
   font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"] {
+  height: 2rem;
   width: 40%;
   margin-left: 0.5rem;
 }
 
+.boxes input {
+  position: absolute;
+  right: 50%;
+  top: 0.5rem;
+}
 
+input:invalid+span:after {
+  content: "✖";
+  padding-left: 5px;
+  color: #b21111;
+  font-weight: bold;
+}
 
+input:valid+span:after {
+  content: "✓";
+  padding-left: 5px;
+  color: #6e9e00;
+  font-weight: bold;
+}
 
+::placeholder {
+  opacity: 1;
+  color: #abada9;
+}
 
+input:focus,
+textarea:focus {
+  background-color: #fff;
+  border-color: #216869;
+}
 
+.but {
+  margin-top: 5rem;
+  text-align: center;
+}
 
+button {
+  height: 3rem;
+  padding: 0 1rem 0 1rem;
+  border:3px #cad49d solid;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f7fcf9;
+}
 
+button:hover {
+  cursor: pointer;
+  border-color: #000;
+}
 
+button[type="submit"] {
+  margin-right: 2rem;
+  background-color: #8fb339;
+}
 
+button[type="submit"]:hover {
+  border-color: #8fb339;
+  background-color: #40511a;
+}
 
+button[type="reset"] {
+  margin-left: 2rem;
+  background-color: #d16014;
+}
 
-
-
-
-
-
+button[type="reset"]:hover {
+  border-color: #d16014;
+  background-color: #aa4e11;
+}
 
 footer {
   text-align: center;
   font-weight: bold;
   color: #cad49d;
+  margin-bottom:2rem;
 }

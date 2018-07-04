@@ -42,7 +42,7 @@
             </select>
           </div>
           <div>
-            <p>Select the prefered priority</p>
+            <p>* Select the prefered priority:</p>
             <div class="boxes">
               <input type="radio" id="pTop" name="priority" value="top">
               <label for="pTop">Top [2 days]</label>
@@ -61,7 +61,7 @@
             </div>
           </div>
           <div>
-            <p>Choose additional services:</p>
+            <p>Additional services:</p>
             <div class="boxes">
               <input type="checkbox" id="translation" name="service" value="translation">
               <label for="translation">Translation</label>
@@ -75,26 +75,30 @@
               <label for="neography">Neography</label>
             </div>
             <div class="boxes">
-              <input type="checkbox" id="scan" name="service" value="scan">
               <label for="scan">Scan</label>
+              <input type="checkbox" id="scan" name="service" value="scan">
+            </div>
+            <div class="boxes">
+              <label for="browsing">Browsing</label>
+              <input type="checkbox" id="browsing" name="service" value="browsing">
             </div>
           </div>
           <div class="enters">
             <label for="comments">Additional comments:</label>
-            <textarea name="comments" id="comments" wrap="soft"></textarea>
+            <textarea name="comments" id="comments" wrap="soft" placeholder="Share your thoughts"></textarea>
           </div>
-          <div>
+          <div class="but">
             <button type="submit" name="submit" id="submit">Submit request</button>
-            <button type="reset" name="reset">Reset fields</button>
+            <button type="reset" name="reset">Reset form</button>
           </div>
         </form>
       </fieldset>
     </main>
     <footer>Created by <a href="#">grigoriewna</a></footer>
 
-  <!--FCC bundle for testing - disabled until fraft is finished
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  -->
+
     <srcipt src="script.js"></script>
   </body>
 </html>
