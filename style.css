@@ -48,21 +48,63 @@ form {
 }
 
 form > div {
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 1.8rem auto;
+  padding: 0;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
 }
 
-label {
+form > div > div {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: cyan;
+  position: relative;
+  overflow: hidden;
+}
+
+.enters label {
   width: 50%;
-  margin: 0 auto;
-  display: inline-block;
+  margin: 0 0.5rem 0 auto;
   float: left;
-  background-color: #fff;
+  background-color: yellow;
   text-align: right;
+  position: relative;
 
 }
+
+.boxes label {
+  width: 50%;
+  margin: 0 auto 0 0.5rem;
+  float: right;
+  text-align: left;
+  background-color: red;
+}
+
+label p {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
 
 input {
-  background-color: yellow;
+  height: 2rem;
+}
+
+input, textarea {
+  background-color: #f7fcf9;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 40%;
+  margin-left: 0.5rem;
 }
 
 
@@ -84,5 +126,6 @@ input {
 
 footer {
   text-align: center;
+  font-weight: bold;
   color: #cad49d;
 }

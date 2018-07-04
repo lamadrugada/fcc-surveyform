@@ -15,22 +15,23 @@
         <legend>
           <p id="description">Please complete the fields below to complete your request:</p>
         </legend>
-        <form id="survey-form" action="">
-          <div>
-            <label for="name" id="name-label">Name:</label>
+        <form id="survey-form" action="" method="">
+          <div class="enters">
+            <label for="name" id="name-label">*Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
           </div>
-          <div>
-            <label for="email" id="email-label">Email:</label>
+          <div class="enters">
+            <label for="email" id="email-label">*Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
             <span class="validity"></span>
           </div>
-          <div>
-            <label for="number" id="number-label">Registry number ranged from 0 to 9999:</label>
+          <div class="enters">
+            <label for="number" id="number-label">* Registry number:
+              <p>[ranged from 0 to 9999]</p></label>
             <input type="number" id="number" name="number" placeholder="Enter your CNB code" min="0" max="9999" required>
             <span class="validity"></span>
           </div>
-          <div>
+          <div class="enters">
             <label for="dropdown" id="dropdown-label">Select the City Lab:</label>
             <select id="dropdown" required>
               <option value="Warszawa">Warszawa</option>
@@ -42,43 +43,43 @@
           </div>
           <div>
             <p>Select the prefered priority</p>
-            <div>
+            <div class="boxes">
               <input type="radio" id="pTop" name="priority" value="top">
               <label for="pTop">Top [2 days]</label>
             </div>
-            <div>
+            <div class="boxes">
               <input type="radio" id="pHigh" name="priority" value="high">
               <label for="pHigh">High [4 business days]</label>
             </div>
-            <div>
+            <div class="boxes">
               <input type="radio" id="pStandard" name="priority" value="standard" checked>
               <label for="pStandard">Standard [7 business days]</label>
             </div>
-            <div>
+            <div class="boxes">
               <input type="radio" id="pLow" name="priority" value="low">
               <label for="pLow">Low [10 business days]</label>
             </div>
           </div>
           <div>
             <p>Choose additional services:</p>
-            <div>
+            <div class="boxes">
               <input type="checkbox" id="translation" name="service" value="translation">
               <label for="translation">Translation</label>
             </div>
-            <div>
+            <div class="boxes">
               <input type="checkbox" id="paleography" name="service" value="paleography">
               <label for="paleography">Paleography</label>
             </div>
-            <div>
+            <div class="boxes">
               <input type="checkbox" id="neography" name="service" value="neography">
               <label for="neography">Neography</label>
             </div>
-            <div>
+            <div class="boxes">
               <input type="checkbox" id="scan" name="service" value="scan">
               <label for="scan">Scan</label>
             </div>
           </div>
-          <div>
+          <div class="enters">
             <label for="comments">Additional comments:</label>
             <textarea name="comments" id="comments" wrap="soft"></textarea>
           </div>
@@ -89,7 +90,7 @@
         </form>
       </fieldset>
     </main>
-    <footer>Created by grigoriewna</footer>
+    <footer>Created by <a href="#">grigoriewna</a></footer>
 
   <!--FCC bundle for testing - disabled until fraft is finished
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
