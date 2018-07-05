@@ -64,6 +64,7 @@ legend p {
 
 form {
   width: 100%;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 form > div {
@@ -154,6 +155,10 @@ textarea:focus {
   border-color: #216869;
 }
 
+input[type="radio"]:focus {
+  background-color: #cad49d;
+}
+
 ::placeholder {
   opacity: 1;
   color: #abada9;
@@ -213,19 +218,12 @@ footer {
 
 }
 
-@media (max-width: 970px) {
-  main {
-    width: 90%;
-  }
-}
-
 @media (max-width: 860px) {
   body {
     padding: 2rem 0 0 0;
   }
   main {
-    width: 100%;
-    margin: 0;
+    margin: 0 auto 0 auto;
     box-shadow: 0;
   }
   .enters label {
@@ -313,4 +311,18 @@ footer {
     margin: 0 auto 1rem auto;
   }
 
+}
+
+@media (max-width: 450px) {
+  main {
+    width: 100%;
+  }
+  /*coby nie przeskakiwało, ale może to olać?*/
+  select,
+  textarea,
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    max-width: 267px;
+  }
 }
