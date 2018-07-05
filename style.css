@@ -58,10 +58,11 @@ legend {
 
 legend p {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 form {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -73,17 +74,21 @@ form > div {
 }
 
 div > p {
+  display: inline;
   width: 50%;
+  float: left;
   text-align: right;
+  background-color: yellow;
 }
 
 .boxes {
-  margin: 0 auto;
-  padding: 0;
-  align: right;
+  width: 50%;
+  float: right;
+  display: inline;
   position: relative;
   overflow: hidden;
   clear:both;
+  background-color: cyan;
 }
 
 .enters label {
@@ -102,10 +107,14 @@ div > p {
   text-align: left;
   font-size: 1.2rem;
   clear: both;
+  background-color: red;
 }
 
-label p {
+label > p {
   display: block;
+}
+
+.tips {
   font-size: 1rem;
   line-height: 1.2rem;
 }
@@ -164,7 +173,7 @@ textarea:focus {
   color: #abada9;
 }
 
-.but {
+.butcon {
   margin-top: 5rem;
   text-align: center;
 }

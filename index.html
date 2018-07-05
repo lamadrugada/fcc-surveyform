@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../Templatki/reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Archive Request</title>
@@ -14,6 +15,7 @@
       <fieldset>
         <legend>
           <p id="description">Please fill the fields below to complete your request:</p>
+          <p class="tips">* required fields</p>
         </legend>
         <form id="survey-form" action="" method="">
           <div class="enters">
@@ -27,7 +29,7 @@
           </div>
           <div class="enters">
             <label for="number" id="number-label">* Registry number:
-              <p>[ranged from 0 to 9999]</p></label>
+              <p class="tips">[ranged from 0 to 9999]</p></label>
             <input type="number" id="number" name="number" placeholder="Enter your CNB code" min="0" max="9999" required>
             <span class="validity"></span>
           </div>
@@ -45,19 +47,19 @@
             <p>* Select the preferred priority:</p>
             <div class="boxes">
               <input type="radio" id="pTop" name="priority" value="top">
-              <label for="pTop">Top [2 days]</label>
+              <label for="pTop">Top <span class="tips">[2 days]</span></label>
             </div>
             <div class="boxes">
               <input type="radio" id="pHigh" name="priority" value="high">
-              <label for="pHigh">High [4 business days]</label>
+              <label for="pHigh">High <span class="tips">[4 business days]</span></label>
             </div>
             <div class="boxes">
               <input type="radio" id="pStandard" name="priority" value="standard" checked>
-              <label for="pStandard">Standard [7 business days]</label>
+              <label for="pStandard">Standard <span class="tips">[7 business days]</span></label>
             </div>
             <div class="boxes">
               <input type="radio" id="pLow" name="priority" value="low">
-              <label for="pLow">Low [10 business days]</label>
+              <label for="pLow">Low <span class="tips">[10 business days]</span></label>
             </div>
           </div>
           <div>
@@ -87,7 +89,7 @@
             <label for="comments">Additional comments:</label>
             <textarea name="comments" id="comments" wrap="soft" placeholder="Share your thoughts"></textarea>
           </div>
-          <div class="but">
+          <div class="butcon">
             <button type="submit" name="submit" id="submit">Submit request</button>
             <button type="reset" name="reset">Reset form</button>
           </div>
