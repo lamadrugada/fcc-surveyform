@@ -1,8 +1,7 @@
 /* TO DO
 - wyrownac sekcje z boxami, zeby opis byl jedyna rzecza po lewej, a boxy z labelami byly juz po prawej, jak na wzorze
-ostylować:
-- textarea
-- dropbox
+ostylować;
+- RWD
 */
 
 
@@ -41,12 +40,14 @@ h1 {
   color: #f7fcf9;
   font-size: 3rem;
   font-weight: 600;
+  text-shadow: 5px 5px 20px #000;
 }
 
 main {
   width: 60%;
   padding: 2rem;
   background-color: #cad49d;
+  box-shadow: 5px 5px 20px #000;
 }
 
 legend {
@@ -109,7 +110,7 @@ label p {
   line-height: 1.2rem;
 }
 
-input, textarea {
+input, textarea, select {
   background-color: #f7fcf9;
   border: 3px solid #f7fcf9;
   font-family: "Raleway", sans-serif;
@@ -117,6 +118,7 @@ input, textarea {
   line-height: 1.8rem;
 }
 
+select,
 input[type="text"],
 input[type="email"],
 input[type="number"] {
@@ -145,15 +147,21 @@ input:valid+span:after {
   font-weight: bold;
 }
 
-::placeholder {
-  opacity: 1;
-  color: #abada9;
+textarea {
+  width: 40%;
+  height: 10rem;
 }
 
 input:focus,
+select:focus,
 textarea:focus {
   background-color: #fff;
   border-color: #216869;
+}
+
+::placeholder {
+  opacity: 1;
+  color: #abada9;
 }
 
 .but {
