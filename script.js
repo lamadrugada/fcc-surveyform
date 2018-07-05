@@ -1,2 +1,2 @@
-//creating main element for IE
+//main element for IE
 document.createElement("main");
