@@ -24,10 +24,6 @@ header, main, footer {
   margin: 2rem auto 4rem auto;
 }
 
-div {
-  background-color: #cad49d;
-}
-
 a {
   text-decoration: none;
   color: #ff7519;
@@ -55,11 +51,15 @@ main {
 }
 
 legend {
-  margin: 0 auto 2rem auto;
-  font-size: 1.6rem;
+  width: 100%;
+  margin: 0 auto 4rem auto;
   text-align: center;
-  margin-bottom: 4rem;
+  font-size: 1.6rem;
   font-weight: bold;
+}
+
+legend p {
+  margin-bottom: 2rem;
 }
 
 form {
@@ -68,7 +68,6 @@ form {
 
 form > div {
   margin: 0 auto 2.5rem auto;
-  position: relative;
   overflow: hidden;
 }
 
@@ -76,17 +75,11 @@ label:hover {
   font-weight: bold;
 }
 
-label > p {
-  display: block;
-}
-
 .enters label {
   width: 50%;
   margin: 0 0.5rem 0 auto;
   float: left;
   text-align: right;
-  position: relative;
-  clear: both;
 }
 
 .boxescon {
@@ -101,15 +94,12 @@ label > p {
 .boxescon > p {
   display: inline;
   width: 50%;
-  float: left;
   text-align: right;
 }
 
 .boxes {
   width: 100%;
-  position: relative;
   overflow: hidden;
-  clear:both;
 }
 
 .tips {
@@ -118,6 +108,7 @@ label > p {
 }
 
 input, textarea, select {
+  margin-left: 0.5rem;
   background-color: #f7fcf9;
   border: 3px solid #f7fcf9;
   font-family: "Raleway", sans-serif;
@@ -131,7 +122,6 @@ input[type="email"],
 input[type="number"] {
   height: 2rem;
   width: 40%;
-  margin-left: 0.5rem;
 }
 
 input[type="radio"] {
@@ -246,9 +236,13 @@ footer {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 700px) {
   header {
     margin: 0 auto 2rem auto;
+  }
+
+  legend p.tips {
+    margin-bottom: 0;
   }
 
   main {
@@ -256,12 +250,12 @@ footer {
   }
 
   form > div {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .enters label {
     width: 100%;
-    margin: 0 0.5rem 0 auto;
+    margin: 0;
     position: relative;
     text-align: left;
     padding-left: 0.5rem;
@@ -271,17 +265,34 @@ footer {
     flex-direction: column;
   }
 
+  .boxescon div {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .boxescon > p {
+    display: inline;
+    width:auto;
+    margin: 0;
+    padding-left: 0.5rem;
+    text-align: left;
+  }
+
+  .boxes {
+    padding-left: 0.5rem;
+  }
+
+  textarea {
+    width: 90%;
+    margin-left: 0.5rem;
+  }
+
   select,
   input[type="text"],
   input[type="email"],
   input[type="number"] {
     height: 2rem;
     width: 90%;
-
-  }
-
-  label:hover {
-    font-weight: normal;
   }
 
   input:invalid+span:after,
@@ -289,4 +300,17 @@ footer {
     content: "";
     display: none;
   }
+
+  .butcon {
+    width: 90%;
+    padding: 0;
+  }
+
+  button[type="submit"],
+  button[type="reset"] {
+    display: block;
+    width: 80%;
+    margin: 0 auto 1rem auto;
+  }
+
 }
