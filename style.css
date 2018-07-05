@@ -1,9 +1,7 @@
 /* TO DO
-- wyrownac sekcje z boxami, zeby opis byl jedyna rzecza po lewej, a boxy z labelami byly juz po prawej, jak na wzorze
-ostylować;
 - RWD
+- cleaning
 */
-
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
 
@@ -26,6 +24,10 @@ header, main, footer {
   margin: 2rem auto 4rem auto;
 }
 
+div {
+  background-color: #cad49d;
+}
+
 a {
   text-decoration: none;
   color: #ff7519;
@@ -44,6 +46,7 @@ h1 {
 }
 
 main {
+  display: block;
   width: 60%;
   padding: 2rem;
   background-color: #cad49d;
@@ -53,49 +56,27 @@ main {
 legend {
   margin: 0 auto 2rem auto;
   font-size: 1.6rem;
-  font-weight: bold;
-}
-
-legend p {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
 }
 
 form {
   width: 100%;
-  margin: 0 auto;
 }
 
 form > div {
   margin: 0 auto 2.5rem auto;
-  padding: 0;
   position: relative;
   overflow: hidden;
 }
 
-.boxescon {
-  display: flex;
+label:hover {
+  font-weight: bold;
 }
 
-.boxesit {
-  width: 50%;
-  padding-left: 0.5rem;
-}
-
-div > p {
-  display: inline;
-  width: 50%;
-  float: left;
-  text-align: right;
-  background-color: yellow;
-}
-
-.boxes {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  clear:both;
-  background-color: cyan;
+label > p {
+  display: block;
 }
 
 .enters label {
@@ -107,15 +88,27 @@ div > p {
   clear: both;
 }
 
-.boxes label {
-  display: inline-block;
-  padding-left: 1rem;
-  clear: both;
-  background-color: red;
+.boxescon {
+  display: flex;
 }
 
-label > p {
-  display: block;
+.boxescon > div {
+  width: 40%;
+  margin-left: 0.5rem;
+}
+
+.boxescon > p {
+  display: inline;
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+.boxes {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  clear:both;
 }
 
 .tips {
@@ -138,6 +131,10 @@ input[type="number"] {
   height: 2rem;
   width: 40%;
   margin-left: 0.5rem;
+}
+
+input[type="radio"] {
+  background-color: #cad49d;
 }
 
 input:invalid+span:after {
@@ -215,5 +212,5 @@ footer {
   text-align: center;
   font-weight: bold;
   color: #cad49d;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }

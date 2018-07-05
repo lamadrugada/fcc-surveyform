@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="../../Templatki/reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Archive Request</title>
+
+    <!--[if lt IE 9]>
+	   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <header>
@@ -45,7 +49,7 @@
           </div>
           <div class="boxescon">
             <p>* Select the preferred priority:</p>
-            <div class="boxesit">
+            <div>
               <div class="boxes">
                 <input type="radio" id="pTop" name="priority" value="top">
                 <label for="pTop">Top <span class="tips">[2 days]</span></label>
@@ -66,7 +70,7 @@
           </div>
           <div class="boxescon">
             <p>Additional services:</p>
-            <div class="boxesit">
+            <div>
             <div class="boxes">
               <input type="checkbox" id="translation" name="service" value="translation">
               <label for="translation">Translation</label>
@@ -104,7 +108,6 @@
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
     <srcipt src="script.js"></script>
   </body>
 </html>
