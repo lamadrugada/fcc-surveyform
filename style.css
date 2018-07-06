@@ -1,5 +1,4 @@
 /* TO DO
-- RWD
 - cleaning
 */
 
@@ -261,7 +260,7 @@ footer {
 
 
 @media (max-width: 670px) {
-  
+
   header {
     margin: 0 auto 2rem auto;
   }
