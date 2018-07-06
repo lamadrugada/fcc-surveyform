@@ -212,29 +212,56 @@ footer {
 }
 
 @media (max-width: 1250px) {
+
   main {
-    width: 80%;
+    width: 90%;
   }
 
 }
 
 @media (max-width: 860px) {
+
   body {
     padding: 2rem 0 0 0;
   }
+
   main {
     margin: 0 auto 0 auto;
     box-shadow: 0;
   }
-  .enters label {
-    width: 30%;
-  }
+
   textarea {
     width: 45%;
   }
+
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
+
+  .enters label {
+    width: 40%;
+  }
+
+  select,
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 50%;
+  }
+
+  .boxescon > p {
+    width: 40%;
+  }
+
+  .boxescon > div {
+    width: 50%;
+  }
+
+}
+
+
+@media (max-width: 670px) {
+  
   header {
     margin: 0 auto 2rem auto;
   }
@@ -281,7 +308,7 @@ footer {
   }
 
   textarea {
-    width: 90%;
+    width: 80%;
     margin-left: 0.5rem;
   }
 
@@ -290,13 +317,7 @@ footer {
   input[type="email"],
   input[type="number"] {
     height: 2rem;
-    width: 90%;
-  }
-
-  input:invalid+span:after,
-  input:valid+span:after {
-    content: "";
-    display: none;
+    width: 80%;
   }
 
   .butcon {
@@ -314,15 +335,14 @@ footer {
 }
 
 @media (max-width: 450px) {
+
   main {
     width: 100%;
   }
-  /*coby nie przeskakiwało, ale może to olać?*/
-  select,
-  textarea,
-  input[type="text"],
-  input[type="email"],
-  input[type="number"] {
-    max-width: 267px;
+
+  input:invalid+span:after,
+  input:valid+span:after {
+    content: "";
+    display: none;
   }
 }
