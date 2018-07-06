@@ -339,9 +339,14 @@ footer {
     width: 100%;
   }
 
+}
+
+@@media (max-width: 300px) {
+
   input:invalid+span:after,
   input:valid+span:after {
     content: "";
     display: none;
   }
+
 }
